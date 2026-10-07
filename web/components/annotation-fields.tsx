@@ -1,0 +1,11 @@
+/** Source annotations remain independent from computed chart data. */
+export function FigureAnnotationFields({figure:f,chart,onChange}:{figure:any;chart:any;onChange:(figure:any)=>void}){
+ const change=(patch:any)=>onChange({...f,...patch});
+ return <details className="figure-annotations"><summary>图中标题、合计与独立标注</summary>
+ <label>图内副标题<input aria-label="Figure caption" value={f.caption||''} onChange={e=>change({caption:e.target.value})}/></label>
+ <p>这些是原稿标注，编辑基础数值后不会自动重算；请一并核对，也可通过 Excel 修改。</p>
+ {f.kind==='chart'&&<table><thead><tr><th>分类</th><th>原图合计</th>{(f.categoryCallouts||[]).map((a:any,i:number)=><th key={i}>{a.label}</th>)}</tr></thead><tbody>{chart.labels.map((label:string,i:number)=><tr key={i}><td>{label||`第 ${i+1} 项`}</td><td><input aria-label={`Printed total ${i+1}`} type="number" value={f.totals?.[i]??''} onChange={e=>change({totals:chart.labels.map((_:any,j:number)=>j===i?(e.target.value===''?null:Number(e.target.value)):f.totals?.[j]??null)})}/></td>{(f.categoryCallouts||[]).map((a:any,k:number)=><td key={k}><input aria-label={`Callout ${k+1} category ${i+1}`} value={a.values[i]||''} onChange={e=>change({categoryCallouts:f.categoryCallouts.map((item:any,j:number)=>j===k?{...item,values:chart.labels.map((_:any,q:number)=>q===i?e.target.value:item.values[q]??null)}:item)})}/></td>)}</tr>)}</tbody></table>}
+ {!!f.seriesAnnotations?.length&&<><label>系列标注标题<input aria-label="Series annotation title" value={f.seriesAnnotationTitle||''} onChange={e=>change({seriesAnnotationTitle:e.target.value})}/></label><label>系列标注期间<input aria-label="Series annotation period" value={f.seriesAnnotationPeriod||''} onChange={e=>change({seriesAnnotationPeriod:e.target.value})}/></label><table><thead><tr><th>系列</th><th>标注</th><th>原稿值</th></tr></thead><tbody>{f.seriesAnnotations.map((a:any,i:number)=><tr key={i}><td>{a.series}</td><td>{a.label}</td><td><input aria-label={`Series annotation ${i+1}`} value={a.value||''} onChange={e=>change({seriesAnnotations:f.seriesAnnotations.map((item:any,j:number)=>j===i?{...item,value:e.target.value}:item)})}/></td></tr>)}</tbody></table></>}
+ {f.note!==undefined&&<label>图内说明<textarea aria-label="Figure note" value={f.note} onChange={e=>change({note:e.target.value})}/></label>}
+ </details>;
+}

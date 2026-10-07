@@ -1,0 +1,5 @@
+import { COMPONENTS, RegisteredFigure, legacyFigure } from './registry';
+
+export function ComponentCatalog({charts,onOpen}:{charts:any[];onOpen:(page:number)=>void}){
+ return <section className="component-catalog"><div className="catalog-intro"><span className="eyebrow dark">OM · REUSABLE COMPONENTS</span><h2>调好的效果，保存成可复用组件。</h2><p>9 类组件覆盖原有 14 个图形。旧样例、上传转换和编辑导出共用绘制程序；数字、分组和标注来自各自的数据。</p></div><div className="catalog-grid">{COMPONENTS.map(item=>{const examples=charts.filter(c=>c.referenceFigure?.kind===item.kind),figure=legacyFigure(examples[0].referenceFigure);return <article key={item.kind} data-catalog-kind={item.kind}><header><div><h3>{item.name}</h3><p>{item.rules}</p></div><span>{examples.length} 个原稿样例</span></header><div className="catalog-preview"><RegisteredFigure figure={figure}/></div><footer><span>同一组件 · 数据驱动</span><button onClick={()=>onOpen(examples[0].referenceFigure.page)}>查看原稿对照与编辑 ↗</button></footer></article>;})}</div><p className="catalog-boundary">这里固定的是此前已调好的 14 个图形所用组件。p22 平面布局图仍需另外优化；识别准确性仍需对照原稿。正式 OM 生成尚未接入这次组件库改动。</p></section>;
+}

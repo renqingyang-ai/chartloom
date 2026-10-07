@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chartloom"
+version = "0.2.0"
+description = "Image and document charts to editable data, themed D3, and versioned validation"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["chartloom-sdk==0.1.2", "pydantic==2.12.5", "PyMuPDF==1.27.2.2", "Pillow==12.3.0", "numpy==2.4.1", "httpx==0.28.1", "python-dotenv==1.2.2"]
+
+[project.scripts]
+chartloom = "chart_platform.server:main"
+chart-studio = "chart_platform.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+chart_platform = ["resources/rules/*.json", "resources/rules/bundles/*.json", "resources/themes/*.json", "resources/pricing/*.json", "tools/*.swift"]

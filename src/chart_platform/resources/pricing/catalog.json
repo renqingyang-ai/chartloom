@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "version": "gemini-prices-2026-10-05-v1",
+  "currency": "USD",
+  "rates": [
+    {
+      "id": "google-gemini-3.8-flash-standard-2026",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "standard",
+      "currency": "USD",
+      "effectiveFrom": "2026-10-04T00:00:00+00:00",
+      "effectiveUntil": "2027-01-01T00:00:00+00:00",
+      "inputPerMillion": "0.75",
+      "cachedInputPerMillion": "0.075",
+      "outputPerMillion": "3.75",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-batch-2026",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "batch",
+      "currency": "USD",
+      "effectiveFrom": "2026-10-04T00:00:00+00:00",
+      "effectiveUntil": "2027-01-01T00:00:00+00:00",
+      "inputPerMillion": "0.375",
+      "cachedInputPerMillion": "0.0375",
+      "outputPerMillion": "1.875",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-flex-2026",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "flex",
+      "currency": "USD",
+      "effectiveFrom": "2026-10-04T00:00:00+00:00",
+      "effectiveUntil": "2027-01-01T00:00:00+00:00",
+      "inputPerMillion": "0.375",
+      "cachedInputPerMillion": "0.0375",
+      "outputPerMillion": "1.875",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-priority-2026",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "priority",
+      "currency": "USD",
+      "effectiveFrom": "2026-10-04T00:00:00+00:00",
+      "effectiveUntil": "2027-01-01T00:00:00+00:00",
+      "inputPerMillion": "1.35",
+      "cachedInputPerMillion": "0.135",
+      "outputPerMillion": "6.75",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-standard-2027",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "standard",
+      "currency": "USD",
+      "effectiveFrom": "2027-01-01T00:00:00+00:00",
+      "effectiveUntil": null,
+      "inputPerMillion": "1.5",
+      "cachedInputPerMillion": "0.15",
+      "outputPerMillion": "7.5",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-batch-2027",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "batch",
+      "currency": "USD",
+      "effectiveFrom": "2027-01-01T00:00:00+00:00",
+      "effectiveUntil": null,
+      "inputPerMillion": "0.75",
+      "cachedInputPerMillion": "0.075",
+      "outputPerMillion": "3.75",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-flex-2027",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "flex",
+      "currency": "USD",
+      "effectiveFrom": "2027-01-01T00:00:00+00:00",
+      "effectiveUntil": null,
+      "inputPerMillion": "0.75",
+      "cachedInputPerMillion": "0.075",
+      "outputPerMillion": "3.75",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    },
+    {
+      "id": "google-gemini-3.8-flash-priority-2027",
+      "provider": "google-gemini",
+      "models": [
+        "gemini-3.8-flash",
+        "gemini/gemini-3.8-flash"
+      ],
+      "mode": "priority",
+      "currency": "USD",
+      "effectiveFrom": "2027-01-01T00:00:00+00:00",
+      "effectiveUntil": null,
+      "inputPerMillion": "2.7",
+      "cachedInputPerMillion": "0.27",
+      "outputPerMillion": "13.5",
+      "outputIncludesThinking": true,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "verifiedAt": "2026-10-05",
+      "notes": "Published token list price; excludes tax, discounts, free tier, explicit-cache storage and tool services. Current converter uses standard mode, not Batch API."
+    }
+  ]
+}

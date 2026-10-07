@@ -1,0 +1,30 @@
+{
+  "name": "chartloom",
+  "private": true,
+  "version": "0.1.1",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:browser": "node tests/browser.mjs",
+    "check:public": "python3 scripts/check_public_source.py"
+  },
+  "dependencies": {
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "d3": "7.9.0",
+    "lucide-react": "0.562.0",
+    "xlsx": "0.18.5",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "typescript": "5.9.3",
+    "playwright": "1.58.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/d3": "7.4.3",
+    "@types/node": "25.0.9"
+  },
+  "license": "MIT"
+}

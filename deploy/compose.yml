@@ -1,0 +1,21 @@
+services:
+  chartloom:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: chartloom:local
+    init: true
+    env_file:
+      - ../.env
+    environment:
+      CHART_DATA_DIR: /data
+      CHART_MODEL_ENV_FILE: ""
+      CHART_INTERNAL_HOSTS: "localhost:${CHART_PORT:-8907},127.0.0.1:${CHART_PORT:-8907}"
+    ports:
+      - "127.0.0.1:${CHART_PORT:-8907}:8897"
+    volumes:
+      - chartloom-data:/data
+    shm_size: 256m
+
+volumes:
+  chartloom-data:

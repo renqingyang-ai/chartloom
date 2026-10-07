@@ -1,0 +1,106 @@
+{
+  "id": "neutral",
+  "version": "1",
+  "name": "Independent Blue",
+  "colors": {
+    "bg": {
+      "primary": "#FFFFFF",
+      "secondary": "#FFFFFF",
+      "tertiary": "#F1EFEB",
+      "dark": "#1D262D",
+      "overlay": "rgba(29, 38, 45, 0.3)",
+      "blur": "rgba(28, 37, 44, 0.6)"
+    },
+    "text": {
+      "primary": "#183153",
+      "secondary": "rgba(29, 38, 45, 0.8)",
+      "white": "#FFFFFF",
+      "accent": "#F2D593",
+      "muted": "rgba(29, 38, 45, 0.6)",
+      "white80": "rgba(255, 255, 255, 0.8)",
+      "white60": "rgba(255, 255, 255, 0.6)",
+      "dark80": "rgba(29, 38, 45, 0.8)",
+      "dark60": "rgba(29, 38, 45, 0.6)",
+      "dark50": "rgba(29, 38, 45, 0.5)"
+    },
+    "table": {
+      "header": "#DECFBA",
+      "row": "#D7DEE3",
+      "highlight": "#232B32"
+    },
+    "border": {
+      "primary": "#C5CBCE",
+      "light": "#E8E8E8",
+      "accent": "#F2D593"
+    },
+    "overlay": {
+      "dark": "rgba(0, 0, 0, 0.3)",
+      "light": "rgba(255, 255, 255, 0.2)",
+      "glass": "rgba(2, 2, 2, 0.60)",
+      "glassBorder": "rgba(255, 255, 255, 0.60)"
+    },
+    "grayscale": {
+      "gray100": "#F3F4F6",
+      "gray500": "#6B7280",
+      "gray600": "#4B5563",
+      "gray700": "#374151"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "display": "Source Sans 3",
+      "heading": "Source Sans 3",
+      "body": "Source Sans 3",
+      "data": "Source Sans 3",
+      "ui": "Source Sans 3",
+      "sans": "Source Sans 3",
+      "comment": "Source Sans 3"
+    },
+    "sizes": {
+      "display": 88,
+      "h1": 48,
+      "h2": 32,
+      "h3": 24,
+      "h4": 20,
+      "body": 20,
+      "bodySmall": 16,
+      "caption": 14,
+      "finePrint": 12,
+      "xxs": 12,
+      "xs": 14,
+      "sm": 16,
+      "base": 20,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48,
+      "3xl": 88
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "lineHeights": {
+      "tight": 1.2,
+      "normal": 1.5,
+      "relaxed": 1.8,
+      "table": 1,
+      "auto": "auto",
+      "none": "normal"
+    },
+    "letterSpacing": {
+      "normal": "0",
+      "wide": "0.2em",
+      "extraWide": "0.3em"
+    }
+  },
+  "chartColors": {
+    "ink": "#183153",
+    "primary": "#3986C8",
+    "secondary": "#89B7D9",
+    "tertiary": "#DCEAF5",
+    "background": "#FFFFFF"
+  }
+}

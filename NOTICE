@@ -1,0 +1,12 @@
+Chartloom
+
+Chartloom's original source code is provided under the MIT License.
+Third-party libraries retain their own licenses; they are installed from the
+Python and JavaScript dependency lock files rather than copied into this project.
+
+Bundled fonts are licensed under the SIL Open Font License 1.1:
+  Kaisei Tokumin — web/fonts/licenses/kaiseitokumin-OFL.txt
+  Source Sans 3 — web/fonts/licenses/sourcesans3-OFL.txt
+  Source Serif 4 — web/fonts/licenses/sourceserif4-OFL.txt
+The font source URLs and original license texts are retained in
+web/fonts/licenses/. The MIT License does not replace these font licenses.
